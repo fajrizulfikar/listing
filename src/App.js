@@ -53,12 +53,27 @@ function App() {
         setQuestions(questions);
       })
       .catch((error) => {
-        console.error("Error when fetching tags", error);
+        console.error("Error when questions", error);
       });
   };
 
   return (
     <div className="App">
+      <section>
+        <div class="flex rounded-md border-2 border-teal-400 overflow-hidden font-[sans-serif]">
+          <input
+            type="email"
+            placeholder="Tag"
+            class="w-full outline-none bg-white text-gray-600 text-sm px-4 py-3"
+          />
+          <button
+            type="button"
+            class="flex items-center justify-center bg-[#2dd4bf] px-5"
+          >
+            Search
+          </button>
+        </div>
+      </section>
       <section>
         <h2 className="text-2xl">Trending</h2>
         <div className="flex gap-2">
