@@ -102,9 +102,9 @@ function App() {
                 </div>
               </section>
             </section>
-            <section className="block">
+            <section className="flex flex-col items-center">
               <img
-                className="rounded"
+                className="rounded-3xl"
                 width="40px"
                 height="40px"
                 src={question.owner?.profile_image}
